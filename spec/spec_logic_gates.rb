@@ -61,3 +61,16 @@ describe '#xnor' do
     expect(xnor(true, true)).to be_truthy
   end
 end
+
+describe '#mux' do
+  it "matches truth table" do
+    expect(mux(false, false, false)).to be_falsey
+    expect(mux(false, true, false)).to be_falsey
+    expect(mux(true, false, false)).to be_truthy
+    expect(mux(true, true, false)).to be_truthy
+    expect(mux(false, false, true)).to be_falsey
+    expect(mux(false, true, true)).to be_truthy
+    expect(mux(true, false, true)).to be_falsey
+    expect(mux(true, true, true)).to be_truthy
+  end
+end
