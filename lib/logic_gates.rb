@@ -25,3 +25,7 @@ end
 def xnor(a, b)
   not(xor(a, b))
 end
+
+def mux(a, b, s)
+  my_or(my_and(a, not(s)), my_and(b, s))
+end
