@@ -43,3 +43,12 @@ describe '#nor' do
     expect(nor(true, true)).to be_falsey
   end
 end
+
+describe '#nand' do
+  it "matches truth table" do
+    expect(nand(false, false)).to be_truthy
+    expect(nand(false, true)).to be_truthy
+    expect(nand(true, false)).to be_truthy
+    expect(nand(true, true)).to be_falsey
+  end
+end

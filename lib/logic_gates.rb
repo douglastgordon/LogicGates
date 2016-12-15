@@ -19,5 +19,5 @@ def nor(a, b)
 end
 
 def nand(a, b)
-  my_or(xor(a, b), nor(a, b))
+  not(my_and(a, b))
 end
