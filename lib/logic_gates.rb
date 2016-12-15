@@ -23,4 +23,5 @@ def nand(a, b)
 end
 
 def xnor(a, b)
+  not(xor(a, b))
 end
