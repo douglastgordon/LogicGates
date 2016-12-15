@@ -34,3 +34,12 @@ describe '#xor' do
     expect(xor(true, true)).to be_falsey
   end
 end
+
+describe '#nor' do
+  it "matches truth table" do
+    expect(nor(false, false)).to be_truthy
+    expect(nor(false, true)).to be_falsey
+    expect(nor(true, false)).to be_falsey
+    expect(nor(true, true)).to be_falsey
+  end
+end
