@@ -25,3 +25,12 @@ describe '#not' do
     expect(not(true)).to be_falsey
   end
 end
+
+describe '#xor' do
+  it "matches truth table" do
+    expect(xor(false, false)).to be_falsey
+    expect(xor(false, true)).to be_truthy
+    expect(xor(true, false)).to be_truthy
+    expect(xor(true, true)).to be_falsey
+  end
+end
