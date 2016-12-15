@@ -18,3 +18,10 @@ describe '#my_or' do
     expect(my_or(true, true)).to be_truthy
   end
 end
+
+describe '#not' do
+  it "matches truth table" do
+    expect(not(false)).to be_truthy
+    expect(not(true)).to be_falsey
+  end
+end
