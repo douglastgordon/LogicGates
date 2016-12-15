@@ -14,6 +14,10 @@ def xor(a, b)
   and(or(a, b), not(and(a, b))
 end
 
+def nor(a, b)
+  and(not(a), not(b))
+end
+
 def nand(a, b)
-  or(xor(a, b), and(not(a), not(b)))
+  or(xor(a, b), nor(a, b))
 end
