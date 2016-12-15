@@ -52,3 +52,12 @@ describe '#nand' do
     expect(nand(true, true)).to be_falsey
   end
 end
+
+describe '#xnor' do
+  it "matches truth table" do
+    expect(xnor(false, false)).to be_truthy
+    expect(xnor(false, true)).to be_falsey
+    expect(xnor(true, false)).to be_falsey
+    expect(xnor(true, true)).to be_truthy
+  end
+end

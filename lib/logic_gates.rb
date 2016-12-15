@@ -21,3 +21,6 @@ end
 def nand(a, b)
   not(my_and(a, b))
 end
+
+def xnor(a, b)
+end
