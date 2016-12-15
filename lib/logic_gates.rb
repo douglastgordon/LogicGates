@@ -15,7 +15,7 @@ def xor(a, b)
 end
 
 def nor(a, b)
-  my_and(not(a), not(b))
+  not(my_or(a, b))
 end
 
 def nand(a, b)
