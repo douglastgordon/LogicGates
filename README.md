@@ -1,38 +1,31 @@
 #LogicGates
 
-Common logic gates written in Ruby. A proof that all logical operations can be derived from AND, OR and NOT.
+A Ruby gem of common logic gates. Also serves as a proof that all logical operations can be derived from AND, OR and NOT.
+
+##Installation
 
 ```ruby
-def my_and(a, b)
-  a && b
-end
+gem 'baseanything'
+```
 
-def my_or(a, b)
-  a || b
-end
+And then execute:
+```ruby
+    $ bundle
+```
+Or install it yourself as:
+```ruby
+    $ gem install baseanything
+```
 
-def not(a)
-  !a
-end
+##API
 
-def xor(a, b)
-  my_and(my_or(a, b), not(my_and(a, b)))
-end
-
-def nor(a, b)
-  not(my_or(a, b))
-end
-
-def nand(a, b)
-  not(my_and(a, b))
-end
-
-def xnor(a, b)
-  not(xor(a, b))
-end
-
-def mux(a, b, s)
-  my_or(my_and(a, not(s)), my_and(b, s))
-end
-
+```ruby
+LogicGates::my_and(a, b)
+LogicGates::my_or(a, b)
+LogicGates::not(a)
+LogicGates::xor(a, b)
+LogicGates::nor(a, b)
+LogicGates::nand(a, b)
+LogicGates::xnor(a, b)
+LogicGates::mux(a, b)
 ```
