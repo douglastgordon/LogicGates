@@ -1,8 +1,8 @@
-#LogicGates
+# LogicGates
 
 A Ruby gem of common logic gates. Also serves as a proof that all logical operations can be derived from the logical operators OR and NOT. (Could also have been done with AND and NOT).
 
-##Installation
+## Installation
 
 ```ruby
 gem 'logicgates'
@@ -17,7 +17,7 @@ Or install it yourself as:
     $ gem install logicgates
 ```
 
-##API
+## API
 
 ```ruby
 LogicGates::my_and(a, b)
