@@ -1,15 +1,15 @@
 module LogicGates
 
-  def self.my_and(a, b)
-    a && b
-  end
-
   def self.my_or(a, b)
     a || b
   end
 
   def self.not(a)
     !a
+  end
+
+  def self.my_and(a, b)
+    not(my_or(not(a), not(b)))
   end
 
   def self.xor(a, b)

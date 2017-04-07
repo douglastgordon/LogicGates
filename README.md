@@ -1,11 +1,11 @@
 #LogicGates
 
-A Ruby gem of common logic gates. Also serves as a proof that all logical operations can be derived from AND, OR and NOT.
+A Ruby gem of common logic gates. Also serves as a proof that all logical operations can be derived from the logical operators OR and NOT. (Could also have been done with AND and NOT).
 
 ##Installation
 
 ```ruby
-gem 'baseanything'
+gem 'logicgates'
 ```
 
 And then execute:
@@ -14,7 +14,7 @@ And then execute:
 ```
 Or install it yourself as:
 ```ruby
-    $ gem install baseanything
+    $ gem install logicgates
 ```
 
 ##API
